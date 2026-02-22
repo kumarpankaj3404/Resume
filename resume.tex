@@ -1,0 +1,197 @@
+\documentclass[letterpaper,11pt]{article}
+    
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{soul}  
+\usepackage{xcolor} 
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+    
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+    
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+    
+\urlstyle{same}
+    
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+    
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+    
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+    
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+    
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+    
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+    
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+    
+    
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+\begin{document}
+\small
+%----------HEADING----------
+\begin{center}
+    \vspace{-6pt}
+    \textbf{\Huge \scshape Pankaj Kumar} \\ \vspace{6pt}
+    \small 
+    \faIcon{envelope}
+    \textbf{\href{mailto:kumarpankaj3404@gmail.com}
+    {\textcolor{blue}{\underline{kumarpankaj3404@gmail.com}}}}  $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/pankaj-kumar-513a10298}{\textcolor{blue}{\underline{\textbf{Linkedin}}}}  $  $ 
+    \faIcon{github}
+    \href{https://github.com/kumarpankaj3404}{\textcolor{blue}{\underline{\textbf{GitHub}}}}  $  $
+    \faIcon{phone}
+    {\textcolor{blue}{\underline{\textbf{+91-8638217797}}}}  $  $
+
+    \vspace{6pt}
+
+    \faIcon{globe}
+    \href{https://pankajkumar.app}{\textcolor{blue}{\underline{\textbf{pankajkumar.app}}}} $  $
+\end{center}
+
+\vspace{-15pt}
+    
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lovely Professional University}{Aug 2023 -- Present}
+      {Bachelor of Technology in Computer Science and Engineering}{CGPA: 8.19}
+    \resumeSubheading
+      {Kendriya Vidyalaya, Hakimpet, Secunderabad}{Apr 2021 -- Mar 2023}
+      {Intermediate}{Percentage: 87.4\%}
+    \resumeSubheading
+      {Kendriya Vidyalaya, Hakimpet, Secunderabad}{Apr 2020 -- Mar 2021}
+      {Matriculation}{Percentage: 71.2\%}
+  \resumeSubHeadingListEnd
+    
+%-----------TRAINING-----------
+\section{Training}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Cipher School}{Jun 2025 -- Jul 2025}
+    {Cloud Computing AWS}{}
+    \resumeItemListStart
+      \resumeItem{Completed an industry-aligned AWS Cloud Computing training focused on EC2, VPC, Load Balancing, Auto Scaling, IAM, S3 and CI/CD with hands-on deployment practices.}
+      \resumeItem{Developed and deployed a multi-instance web application architecture on AWS using EC2, ALB, security groups, and networking concepts.}
+      \resumeItem{Gained practical skills in cloud deployment, instance management, monitoring, automation, and optimizing cloud workloads following AWS best practices.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Restaurant Order Management} $|$ \footnotesize\emph{{Node.js, Express.js, MongoDB, Redux, React.js, Tailwind}}}
+      {\href{https://github.com/kumarpankaj3404/Resturant-Frontend}{\faGithub\ \textcolor{blue}{\textbf{GitHub}}}}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Built a modular MERN-based ordering system with JWT auth and complete menu/order CRUD, improving API performance by 35\% through optimized routing and MongoDB indexing.}
+        \resumeItem{Developed a responsive frontend using React.js, Redux Toolkit, Tailwind, and Motion, reducing state-related re-renders by 30\% and delivering smoother UI interactions.}
+        \resumeItem{Engineered structured business logic, reusable validation middleware, and centralized error handling to standardize API responses, reduce runtime failures, and enhance system reliability.}
+      \resumeItemListEnd
+    \vspace{-10pt}
+
+    \resumeProjectHeading
+      {\textbf{\href{https://unimart.pankajkumar.app/}{\textcolor{blue}{\underline{Unimart - Real-Time Delivery Tracking}}}} $|$ \footnotesize\emph{{Node.js, Express.js, MongoDB, Socket.IO, React.js, Redux}}}
+      {\href{https://github.com/kumarpankaj3404/Unimart-Frontend}{\faGithub\ \textcolor{blue}{\textbf{GitHub}}}}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Built a production-ready full-stack delivery platform with role-based authentication for Customers, Delivery Partners, and Admins using JWT, Express.js, and MongoDB with clean, modular API architecture.}
+        \resumeItem{Implemented real-time order tracking using Socket.IO and WebSockets, streaming live driver GPS locations to customers on interactive maps (React Leaflet) for an Uber-like delivery experience.}
+        \resumeItem{Integrated real-time client-side communication and mapping workflows using Socket.IO Client and React Leaflet delivering sub-500ms live location updates, supporting 100+ concurrent active orders, and improving delivery visibility and user trust.}
+      \resumeItemListEnd
+    \vspace{-10pt}
+
+    \resumeProjectHeading
+      {\textbf{\href{https://recipe-finder-pankaj.vercel.app/}{\textcolor{blue}{\underline{Recipe Finder}}}} $|$ \footnotesize\emph{{React.js, Redux, Tailwind CSS, Supabase}}}
+      {\href{https://github.com/kumarpankaj3404/recipe-finder}{\faGithub\ \textcolor{blue}{\textbf{GitHub}}}}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Engineered a Full-stack recipe platform using React and Supabase, achieving 100\% data persistence for user-specific favorite lists through secure backend integration.}
+        \resumeItem{Architected centralized state management using Redux Toolkit, reducing prop-drilling by 80\% and ensuring seamless data flow across search and category filters.}
+        \resumeItem{Optimized UI performance with Tailwind CSS and React Router, delivering a fully responsive experience with sub-1 second page transitions across all devices.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-15pt}
+    
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages:} Java, JavaScript, TypeScript, C, C++ \\
+        \textbf{Frontend:} HTML, CSS, Tailwind CSS, React.js, Next.js, Redux Toolkit \\
+        \textbf{Backend:} Node.js, Express.js, REST APIs, MongoDB, JWT, Cloudinary \\
+        \textbf{Tools/Platforms:} GitHub, Git, Netlify, Render, Postman, Google Search Console \\
+        \textbf{Soft Skills:} Problem-Solving, Project Management, Time Management \\
+    }}
+\end{itemize}
+    
+\vspace{-15pt}
+    
+%-----------CERTIFICATIONS & ACHIEVEMENTS---------------
+\section{Certifications \& Achievements}
+\resumeSubHeadingListStart
+    \resumeItemListStart
+        \resumeItem{\textbf{Certifications:} Node.js by Scaler (Feb 2026), Social Networks by NPTEL (Oct 2025), MERN Stack by Udemy (Dec 2024), Responsive Web Design (Nov 2023).}
+        \resumeItem{\textbf{Leetcode Achievements:} Solved 150+ Data Structures and Algorithms problems, covering Arrays, Strings, Linked Lists, Trees, Graphs, Recursion, and Dynamic Programming.}
+        \resumeItem{\textbf{HackerRank Badges:} Earned a Gold Level Badge in Java on HackerRank by solving complex algorithmic challenges and accumulating over 300+ points.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+    
+\end{document}
